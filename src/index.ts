@@ -1,5 +1,5 @@
 import { LuaAgent } from "lua-cli";
-import businessFinderSkill from "./skills/business-finder.skill";
+import { PR} from "./skills/pr"
 
 /**
  * Revamp Business Website Finder
@@ -30,7 +30,12 @@ Present results clearly with the business name, website URL, address or area, ph
 Do not invent website URLs or contact details. If the lookup tool does not return a website for a business, say so or omit it depending on the user's request.
 `,
 
-    skills: [businessFinderSkill],
+---
+Feel free to add, remove, or rename sections. Your persona can be a single paragraph or a detailed playbook — whatever gives your agent the context it needs.
+`,   // Set during lua init
+    
+    // Add your skills here
+    skills: [PR],
     
     // Optional: Add webhooks for external integrations
     // webhooks: [],

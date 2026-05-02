@@ -1,0 +1,4 @@
+dist-v2/
+.env
+.env.local
+.env.*.local

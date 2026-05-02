@@ -1,4 +1,6 @@
 import { LuaAgent } from "lua-cli";
+import scrapeSkill from "./skills/scrape.skill";
+import redesignSkill from "./skills/redesign.skill";
 
 /**
  * Your Lua AI Agent
@@ -66,7 +68,7 @@ Feel free to add, remove, or rename sections. Your persona can be a single parag
 `,   // Set during lua init
     
     // Add your skills here
-    skills: [],
+    skills: [scrapeSkill, redesignSkill],
     
     // Optional: Add webhooks for external integrations
     // webhooks: [],

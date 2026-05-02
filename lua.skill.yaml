@@ -2,9 +2,6 @@ agent:
   agentId: baseAgent_agent_1777724902759_mbmpt0nye
   orgId: 80de4432-a3a4-477b-97e4-87f298e51483
 skills:
-  - name: PR
-    skillId: db739730-1ab4-4ea7-b2e4-f5c129bd32f4
-    version: 1.0.0
   - name: scrape-website
     skillId: c9cf1eb6-2198-4eb6-b2b0-7cbd2dfcbc3c
     version: 1.0.1

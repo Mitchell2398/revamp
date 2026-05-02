@@ -1,5 +1,6 @@
 import { LuaAgent } from "lua-cli";
-import { PR} from "./skills/pr"
+import scrapeSkill from "./skills/scrape.skill";
+import redesignSkill from "./skills/redesign.skill";
 
 /**
  * Revamp Business Website Finder
@@ -35,7 +36,7 @@ Feel free to add, remove, or rename sections. Your persona can be a single parag
 `,   // Set during lua init
     
     // Add your skills here
-    skills: [PR],
+    skills: [scrapeSkill, redesignSkill],
     
     // Optional: Add webhooks for external integrations
     // webhooks: [],

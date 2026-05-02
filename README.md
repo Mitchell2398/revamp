@@ -1,15 +1,18 @@
-# 🤖 Lua AI Agent
+# Revamp Business Website Finder
 
-Welcome to your Lua AI Agent! This is a minimal project ready for you to build your custom agent.
+Revamp is a Lua AI Agent that finds businesses in a target area and returns their website URLs using Foursquare Places.
 
 ## 🚀 Quick Start
 
 ```bash
-# 1. Test your agent (sandbox mode)
+# 1. Configure Foursquare Places
+export FOURSQUARE_API_KEY="your-api-key"
+
+# 2. Test your agent (sandbox mode)
 lua chat
 
-# 2. Create your first tool
-# See "Creating Your First Tool" below
+# Example prompt:
+# Find 10 dentists in Galway and list their website URLs
 
 # 3. Deploy to production
 lua push all --force --auto-deploy
@@ -26,7 +29,18 @@ your-project/
 └── tsconfig.json         # TypeScript config
 ```
 
-## 🛠️ Creating Your First Tool
+## Business Finder Tool
+
+The agent includes a `business-finder` skill with a `find_business_websites` tool. It accepts:
+
+- `businessQuery`: the business type or search query, such as `dentists` or `accountants`
+- `area`: the city, neighborhood, postcode, or region to search
+- `limit`: optional result count, up to 50
+- `includeBusinessesWithoutWebsite`: optional flag for including businesses that do not have a returned website URL
+
+The tool returns normalized business results with names, website URLs, addresses, phone numbers, Foursquare URLs, ratings, and place IDs when available.
+
+## 🛠️ Creating Additional Tools
 
 ### 1. Create the tool file
 

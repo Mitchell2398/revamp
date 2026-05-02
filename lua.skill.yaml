@@ -1,7 +1,10 @@
 agent:
-  agentId: baseAgent_agent_1777724902759_mbmpt0nye
-  orgId: 80de4432-a3a4-477b-97e4-87f298e51483
-skills: []
+  agentId: baseAgent_agent_1777727806294_fimfuqcv7
+  orgId: 96cf8850-3329-49fc-8882-55a20b87dc9a
+skills:
+  - name: email-outreach-skill
+    skillId: 77327728-32a6-4ef3-9cb8-b267270eac1e
+    version: 1.0.0
 webhooks: []
 jobs: []
 preprocessors: []

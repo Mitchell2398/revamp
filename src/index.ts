@@ -1,4 +1,5 @@
 import { LuaAgent } from "lua-cli";
+import { PR} from "./skills/pr"
 
 /**
  * Your Lua AI Agent
@@ -66,7 +67,7 @@ Feel free to add, remove, or rename sections. Your persona can be a single parag
 `,   // Set during lua init
     
     // Add your skills here
-    skills: [],
+    skills: [PR],
     
     // Optional: Add webhooks for external integrations
     // webhooks: [],
